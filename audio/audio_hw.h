@@ -34,9 +34,9 @@
 #define RETRY_US 500000
 
 #ifdef __LP64__
-#define OFFLOAD_FX_LIBRARY_PATH "/vendor/lib64/soundfx/libvisualizer.so"
+#define OFFLOAD_FX_LIBRARY_PATH "/system/lib64/soundfx/libnvvisualizer.so"
 #else
-#define OFFLOAD_FX_LIBRARY_PATH "/vendor/lib/soundfx/libvisualizer.so"
+#define OFFLOAD_FX_LIBRARY_PATH "/system/lib/soundfx/libnvvisualizer.so"
 #endif
 
 #ifdef PREPROCESSING_ENABLED
@@ -100,7 +100,6 @@ enum {
     SND_DEVICE_IN_HDMI_MIC,
     SND_DEVICE_IN_BT_SCO_MIC,
     SND_DEVICE_IN_CAMCORDER_MIC,
-    SND_DEVICE_IN_CAMCORDER_HEADSET_MIC,
     SND_DEVICE_IN_VOICE_REC_HEADSET_MIC,
     SND_DEVICE_IN_VOICE_REC_MIC,
     SND_DEVICE_IN_END,
